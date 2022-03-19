@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="data:,">
+
+    <title>Destranca Pontos</title>
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="logo-pontuacao">
+            <img src="/ASSETS/destrancaPontosLogo.jpg" alt="jogoLogo">
+        </h1>
+    </header>
+
+    <section class="entradaJogadores">
+        <div id="input-jogador1">
+            <input type="text" placeholder="Adicionar jogador/dupla" id="inputNovoJogador1">
+        </div>
+        <div id="input-jogador2">
+            <input type="text" placeholder="Adicionar jogador/dupla" id="inputNovoJogador2">
+        </div>
+        <!--   <div class="adicionarJogador">
+            <button type="submit" onclick="adicionar()"> + </button>
+        </div>
+        <div class="listaJogadores">
+            <h2 id="jogadorAdicionado">
+            </h2>
+        </div>-->
+        <div class="jogar">
+            <button>Jogar</button>
+        </div>
+    </section>
+
+    <section class="pontuacao-partidas">
+        <header>
+            <h1 class="logo-pontuacao-interna">
+                <img src="/ASSETS/destrancaPontosLogo.jpg" alt="jogoLogo">
+            </h1>
+        </header>
+        <!--  <div class="definicao-pontos-partida">
+            <h2>A partida vai até</h2>
+            <button id="1k">1k</button>
+            <button id="2k">2k</button>
+            <button id="3k">3k</button>
+        </div>-->
+        <div class="container-nome-jogadores">
+            <div class="nome-input-jogadores">
+                <h1 id="nome-jogador1"></h1>
+                <input type="number" id="input-pontos-jogador1" placeholder="Pontos">
+            </div>
+            <div class="nome-input-jogadores">
+                <h1 id="nome-jogador2"></h1>
+                <input type="number" id="input-pontos-jogador2" placeholder="Pontos">
+            </div>
+        </div>
+        <div id="botao-somar-pontos">
+            <button>Somar pontos</button>
+        </div>
+        <div class="container-pontos-jogadores">
+            <div class="nome-pontos-jogadores">
+                <h2 id="total-pontos-jogador1"></h2>
+                <div id="lista-pontos-jogador1">
+                    <p id="pontos-jogador1"></p>
+                </div>
+            </div>
+            <div class="nome-pontos-jogadores">
+                <h2 id="total-pontos-jogador2"></h2>
+                <div id="lista-pontos-jogador2">
+                    <p id="pontos-jogador2"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+
+</html>
