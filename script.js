@@ -75,34 +75,6 @@ function somarPontos(event) {
 
   soma2 = soma2 + inputPontosJogador2;
   outputTotalPontosJogador2.innerHTML = soma2;
+  document.getElementById("input-pontos-jogador1").value = "";
+  document.getElementById("input-pontos-jogador2").value = "";
 }
-
-/*let nomeJogador1 = document.getElementById("nome-jogador1");
-let nome-jogador1 = jogador1;
-nomeJogador1.innerHTML = nome-jogador1;
-
-/*let numeroJogadores = 0;
-
-function adicionar() {
-  numeroJogadores++;
-
-  if (numeroJogadores <= 2) {
-    let nomeJogadorAdicionado =
-      document.getElementById("inputNovoJogador").value;
-    console.log(numeroJogadores);
-
-    let novoNomeAdicionado = document.getElementById("jogadorAdicionado");
-    console.log(novoNomeAdicionado);
-
-     let jogadorAdicionado = nomeJogadorAdicionado;
-    if (numeroJogadores == 2) {
-      jogadorAdicionado = " VS " + jogadorAdicionado;
-    }
-
-    let elementoNovoInput = jogadorAdicionado;
-
-    novoNomeAdicionado.innerHTML =
-      novoNomeAdicionado.innerHTML + elementoNovoInput;
-  }
-  document.getElementById("inputNovoJogador").value = "";
-}*/
